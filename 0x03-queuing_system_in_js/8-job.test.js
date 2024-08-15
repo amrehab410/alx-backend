@@ -41,7 +41,7 @@ describe('createPushNotificationsJobs', () => {
     expect(() => createPushNotificationsJobs(1, queue)).to.throw(/Jobs is not an array/);
   });
 
-  it('throws if queue is not a valid kue', function() {
+  it('throws if queue is not a valid kue', function () {
     expect(() => createPushNotificationsJobs(jobs, "")).to.throw();
   });
 
